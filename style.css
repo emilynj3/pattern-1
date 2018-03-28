@@ -1,0 +1,156 @@
+/* DON'T DELETE THIS */
+
+html {
+  box-sizing: border-box;
+}
+
+#tile-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.col-15 {
+  width: 15%;
+}
+
+.col-65 {
+  width: 65%;
+}
+.col-20 {
+  width: 20%;
+}
+.col {
+  height: 100%;
+  float: left;
+}
+
+#col-1 {
+  background: yellow;
+}
+
+#col-1 .stripe {
+  height: 100%;
+  width: 1%;
+  background: red;
+  float: left;
+}
+
+#col-1 .stripe:nth-child(2n+0) {
+  background: yellow;
+}
+
+#col-2 {
+  background: red
+}
+
+#col-2 .stripe {
+  height: 1%;
+  width: 100%;
+  background: red;
+}
+
+#col-2 .stripe:nth-child(2n+2) {
+  background: blue;
+}
+
+#col-3 {
+  background: blue
+}
+
+#col-3 .stripe {
+  height: 2%;
+  width: 100%;
+  background: red;
+}
+
+#col-3 .stripe:nth-child(3n+0) {
+  background: yellow;
+}
+
+#col-4 {
+  background: #faeeb2;
+}
+#col-4 .stripe {
+  height: 100%;
+  width: 2%;
+  background: pink;
+  float: left;
+}
+
+#col-4 .stripe:nth-child(2n+0) {
+  background: #faeeb2;
+}
+
+/* IF SCREEN SIZE IS BETWEEN 700px and 0px */
+@media screen and (max-width: 700px) and (min-width: 0px) {
+
+#col-1 .stripe:nth-child(2n+0) {
+  background: red;
+}
+#col-2 .stripe {
+  height: 1%;
+  width: 100%;
+  background: blue;
+}
+
+#col-3 .stripe {
+  height: 2%;
+  width: 100%;
+  background: yellow;
+}
+
+
+
+
+/* CCS @MEDIA SCREEN 4 LATER */
+
+@media screen and (max-width: 400px) and (min-width: 0px) {
+  /*
+  element {
+    background: blue;
+  }
+*/
+}
+
+/* DON'T DELETE THIS */
+
+#flag-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: red;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,*:before,*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+/* Clear Float */
+
+.cf:before,.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
